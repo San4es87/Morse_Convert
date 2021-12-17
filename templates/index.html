@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Translate and analyze text with Azure Cognitive Services.">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Morse Code Decoder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Morse Code Decoder</h1>
+      <p>Hi I'll help you with your message!!!
+      </p>
+      <div class="row">
+        <div class="col">
+        <form action="/a" method="post">
+            <!-- Enter text to translate. -->
+            <div class="form-group">
+              <label for="text-to-translate"><strong>Enter the text you'd like to encode:</strong></label>
+               <textarea class="form-control" id="text-to-translate" rows="5" name="text" placeholder="Enter text"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-2" id="translate" >Encode text</button></br>
+
+
+          </form>
+          <!-- Translated text  -->
+        </div>
+        <div class="col">
+          <form>
+            <div class="form-group" id="translator-text-response">
+              <label for="translation-result"><strong>Encode text:</strong></label>
+              <textarea readonly class="form-control" id="translation-result" rows="5">{{ q }}</textarea>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
