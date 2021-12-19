@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Morse Code Decoder</title>
+    <link rel="stylesheet" href="static/styles.css">
   </head>
   <body>
     <div class="container">
@@ -19,11 +20,11 @@
         <form action="/a" method="post">
             <!-- Enter text to translate. -->
             <div class="form-group">
-              <label for="text-to-translate"><strong>Enter the text you'd like to encode:</strong></label>
-               <textarea class="form-control" id="text-to-translate" rows="5" name="text" placeholder="Enter text"></textarea>
+              <label for="text-to-translate"><strong>Your text:</strong></label>
+               <textarea class="form-control" id="text-to-translate" rows="10" name="text" placeholder="Enter text"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary mb-2" id="translate" >Encode text</button></br>
+            <button type="submit" class="btn btn-info mb-2" id="translate" >Encode text</button></br>
 
 
           </form>
@@ -33,7 +34,7 @@
           <form>
             <div class="form-group" id="translator-text-response">
               <label for="translation-result"><strong>Encode text:</strong></label>
-              <textarea readonly class="form-control" id="translation-result" rows="5">{{ q }}</textarea>
+              <textarea readonly class="form-control" id="translation-result" rows="10">{{ text }}</textarea>
 
             </div>
           </form>
